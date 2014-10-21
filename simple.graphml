@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="device" attr.type="string">
+    <default>none</default>
+  </key>
+  <graph id="G" edgedefault="directed">
+    <node id="n0"> <data key="d0">in</data></node>
+    <node id="n1"><data key="d0">ck</data></node>
+    <node id="n2"><data key="d0">DFF</data></node>
+    <node id="n3"></node>
+    <node id="n4"><data key="d0">in</data></node>
+    <node id="n5"><data key="d0">or</data></node>
+    <node id="n6"><data key="d0">nand</data></node>
+    <node id="n7"><data key="d0">nand</data></node>
+    <node id="n8"><data key="d0">in</data></node>
+    <node id="n9"></node>
+    <node id="n10"><data key="d0">in</data></node>
+    <node id="n11"><data key="d0">or</data></node>
+    <node id="n12"><data key="d0">DFF</data></node>
+    <node id="n13"><data key="d0">out</data></node>
+    <edge source="n0" target="n2"/>
+    <edge source="n1" target="n2"/>
+    <edge source="n2" target="n3"/>
+    <edge source="n3" target="n5"/>
+    <edge source="n4" target="n5"/>
+    <edge source="n3" target="n6"/>
+    <edge source="n8" target="n6"/>
+    <edge source="n5" target="n7"/>
+    <edge source="n6" target="n9"/>
+    <edge source="n9" target="n7"/>
+    <edge source="n9" target="n11"/>
+    <edge source="n10" target="n11"/>
+    <edge source="n11" target="n7"/>
+    <edge source="n7" target="n12"/>
+    <edge source="n1" target="n12"/>
+    <edge source="n12" target="n13"/>
+  </graph>
+</graphml>
